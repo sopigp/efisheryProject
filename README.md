@@ -23,10 +23,6 @@ To run features on specific browser:
 edit on : System.setProperty("webdriver.chrome.driver", projectLocation + "\\lib\\driver\\chromedriver.exe");
 change chromedriver.exe to another webdriver whatever you want.
 
-Please note that browser drivers are included as part of this framework. 
-The reason for inclusion is that the version of the selenium browser driver that is included matches the version of the browser I'm using as well as the version of the selenium server.
- If your browser version and browser driver version are different, please adjust them first
-
 To run specific feature if you have multiple feature files use, change the mvn test "tags = { "@ExploreMusic" } / { "@PlayYoutubeMusic" } /  { "@SearchMusic" }
 Reporters
 Once you ran your tests you can generate the the reports. This framework selenium-cucumber-java uses test reporters to communicate pass/failure.
@@ -35,3 +31,12 @@ Once you ran your tests you can generate the the reports. This framework seleniu
 HTML Report:
 To generate HTML report use mvn test -Dcucumber.options="–plugin html:target/cucumber-html-report.html","json:target/cucumber.json", "html:target/cucumber-reports""
 
+**NOTE**
+Please note that browser drivers are included as part of this framework. 
+The reason for inclusion is that the version of the selenium browser driver that is included matches the version of the browser I'm using as well as the version of the selenium server.
+If your browser version and browser driver version are different, please adjust them first
+
+USE YOUR ACTIVE WINDOW TO RUN TEST CASE!
+chromeOptions.addArguments("user-data-dir=C:\\Users\\asus\\AppData\\Local\\Google\\Chrome\\User Data");
+chromeOptions.addArguments("--profile-directory=Default");----> CHANGE "Default" to your active profile chrome (example :Profile 1)
+Before you want to run, close the chrome first. And when the test running, it will open your active window (not open new window)
