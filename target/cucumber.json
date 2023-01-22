@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5916624700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User want explore the music playlist based on categories and see list of song form each categories",
+        "description": "",
+        "id": "home;user-want-explore-the-music-playlist-based-on-categories-and-see-list-of-song-form-each-categories",
+        "after": [
+          {
+            "result": {
+              "duration": 59800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7767053400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User on homepage with already login",
+            "match": {
+              "location": "ExploreMusicSteps.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94111000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click explore menu",
+            "match": {
+              "location": "ExploreMusicSteps.exploreMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1254102200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be navigated to explore menu",
+            "match": {
+              "location": "ExploreMusicSteps.navigateToExploreMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168711700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User explore the music based on categories",
+            "match": {
+              "location": "ExploreMusicSteps.chooseSongfromNewAlbumandSingleSection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8985026900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User can see new album and single section, mood and genres section, trending section, new music video section",
+            "match": {
+              "location": "ExploreMusicSteps.exploreMusicBasedonCategories()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@ExploreMusic"
+          }
+        ]
+      }
+    ],
+    "name": "Home",
+    "description": "As a user\r\nI want to explore the music playlist based on categories",
+    "id": "home",
+    "keyword": "Feature",
+    "uri": "feature/2-ExploreMusic.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ExploreMusic"
+      }
+    ]
+  }
+]
